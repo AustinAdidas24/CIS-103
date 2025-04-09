@@ -22,9 +22,25 @@ print("The result of the division of num1 by num2 is:", float(num1) / float(num2
 
 # Using Functions and Modules:
 # Write a Python program that imports the math module and calculates the area of a circle.
-# The program should ask the user to enter the radius of the circle, compute the area using the formula: Area = π * r², and print the result with an appropriate message.
+# The program should ask the user to enter the radius of the circle, compute the area using the formula:
+# Area = π * r², and print the result with an appropriate message.
 
 import math
 radius = float(input("Enter the radius of the circle: "))
 
 print("The are of the circle is: ", math.pi * (radius ** 2))
+# Bonus Challenge (+5 points): Modify your area-of-a-circle program to also calculate the circumference of the circle
+# (C = 2 π r) and display both results in a formatted output.
+print("The circumference of the circle is: ", (2 * math.pi * radius))
+
+# Bug in String Concatenation:
+name = input("Enter your name: ")
+greeting = "Hello, " + name + "! Welcome to Python."
+print(greeting)
+
+# Bug in Type Conversion:
+num1 = int(input("Enter a number: "))
+num2 = int(input("Enter another number: "))
+total = num1 + num2
+print("The sum is:", total)
+
