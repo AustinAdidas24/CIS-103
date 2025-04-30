@@ -157,5 +157,33 @@ for word, count in word_counts.items():
     print(f"{word}: {count}")
 
 #Question 9: Sorting a Dictionary
-# Given `sales = {'John': 1500, 'Alice': 2200, 'Bob': 1800}`, write a program that sorts the dictionary
+# Given `sales = {'John': 1500, 'Alice': 2200, 'Bob': 1800}`,
+# write a program that sorts the dictionary
 # by sales amount in descending order
+
+# create a dictionary named sales
+sales = {'John': 1500, 'Alice': 2200, 'Bob': 1800}
+# A new dictionary name is created, key=sales.get tells python
+# to get and sort the keys based on the values associated with them
+# reverse=True is putting the values in descending orders
+sorted_names = sorted(sales, key=sales.get, reverse=True)
+# We create a for loop that iterates through each name in the sorted list
+# For each name, it prints the name and the value which is the sales amount.
+for name in sorted_names:
+    print(f"{name}: ${sales[name]}")
+
+# Question 10: Finding the Most Frequent Word (Mode)
+# Write a Python program that reads a list of words and finds the most frequently occurring word
+#input("Enter a sentence and find the most utilized word
+sentence = "This is an example python sentence that is created in a python IDE and run in python"
+words = sentence.split()
+
+word_counts = {}
+for word in words:
+    word_counts[word] = word_counts.get(word,0) + 1
+
+theMaximum = max(word_counts.values())
+for key in word_counts:
+    if word_counts[key] == theMaximum:
+        print(f"The mode is, {key}, and appears {theMaximum} times")
+

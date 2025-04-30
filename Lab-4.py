@@ -106,7 +106,7 @@ print(f"{max_student} has the highest score of {scores[max_student]}.")
 # ```python
 # dict1 = {'a': 100, 'b': 200}
 # dict2 = {'c': 300, 'd': 400}
-# ```
+# ```z
 # Merge them into a single dictionary.
 # Problem 10: Inverting a Dictionary
 # Given a dictionary where keys are names and values are ages:
